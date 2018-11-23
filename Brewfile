@@ -5,10 +5,8 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 
 # Binaries
-brew 'bash' # Bash 4
 brew 'bat'
 brew 'git'
-brew 'grep'
 brew 'mackup'
 brew 'mas'
 brew 'trash'
