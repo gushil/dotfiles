@@ -36,6 +36,10 @@ export DOTFILES=$HOME/.dotfiles
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="dd/mm/yyyy"
 
+HISTFILE=~/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+
 # Would you like to use another custom folder than $ZSH/custom?
 ZSH_CUSTOM=$DOTFILES
 
@@ -58,9 +62,14 @@ export LANG=en_US.UTF-8
 
 # Zsh brew completion
 if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 fi
+
+zstyle ':completion:*' completer _complete _ignored _approximate
+zstyle :compinstall
+​
+autoload -Uz compinit
+compinit
 
 # Initialized pure prompt https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
