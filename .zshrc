@@ -65,8 +65,6 @@ if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 fi
 
-zstyle ':completion:*' completer _complete _ignored _approximate
-​
 autoload -Uz compinit
 compinit
 
