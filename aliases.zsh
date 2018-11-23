@@ -2,7 +2,7 @@
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="ls -ahlFG --group-directories-first"
+alias ll="ls -ahlFG"
 weather() { curl -4 wttr.in/${1:-Bandung} }
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
