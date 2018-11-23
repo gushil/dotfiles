@@ -56,6 +56,12 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+# Zsh brew completion
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+fi
+
 # Initialized pure prompt https://github.com/sindresorhus/pure
 autoload -U promptinit; promptinit
 prompt pure
