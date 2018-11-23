@@ -17,7 +17,6 @@ brew 'zsh'
 brew 'zsh-completions'
 
 # Development
-brew 'imagick'
 brew 'node@10'
 brew 'yarn'
 cask 'java8'
