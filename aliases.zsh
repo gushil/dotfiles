@@ -2,10 +2,26 @@
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="ls -ahlFG"
-weather() { curl -4 wttr.in/${1:-Bandung} }
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
+alias myip="curl -s ident.me"
+alias ll="ls -lhFA"
+alias la='ls -A'
+alias l='ls -CF'
+alias df="df -Tha --total"
+alias du="du -ach | sort -h"
+alias free="free -mt"
+alias ps="ps auxf"
+alias psg="ps aux | grep -v grep | grep -i -e VSZ -e"
+alias mkdir="mkdir -pv"
+alias histg="history | grep"
+alias wget="wget -c"
+
+mcd () {
+    mkdir -p $1
+    cd $1
+}
+weather() { curl -4 wttr.in/${1:-Bandung} }
 
 # Directories
 alias dotfiles="cd $DOTFILES"
