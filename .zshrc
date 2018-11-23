@@ -66,7 +66,6 @@ if type brew &>/dev/null; then
 fi
 
 zstyle ':completion:*' completer _complete _ignored _approximate
-zstyle :compinstall
 ​
 autoload -Uz compinit
 compinit
