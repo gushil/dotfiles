@@ -60,6 +60,9 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
+SOURCE $DOTFILES/aliases.zsh
+SOURCE $DOTFILES/path.zsh
+
 # Zsh brew completion
 if type brew &>/dev/null; then
     FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
