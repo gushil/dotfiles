@@ -24,8 +24,9 @@ brew 'maven'
 cask 'aerial'
 cask 'alfred'
 cask 'bitwarden'
-cask 'dash'
 cask 'caffeine'
+cask 'dash'
+cask 'enpass'
 cask 'firefox'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
@@ -34,6 +35,7 @@ cask 'hipchat'
 cask 'iina'
 cask 'imageoptim'
 cask 'insomnia'
+cask 'nightowl'
 cask 'postman'
 cask 'sequel-pro'
 cask 'shuttle'
@@ -67,6 +69,6 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
+# mas 'MindNode 5', id: 1289197285
 # mas 'The Unarchiver', id: 425424353
-# mas 'Tweetbot', id: 1384080005
-# mas 'WhatsApp', id: 1147396723 
+# mas 'WhatsApp Desktop', id: 1147396723 
