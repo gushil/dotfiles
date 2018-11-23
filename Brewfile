@@ -65,7 +65,7 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Mac App Store
-mas 'Byword', id: 420212497
-mas 'The Unarchiver', id: 425424353
-mas 'Tweetbot', id: 1384080005
-mas 'WhatsApp', id: 1147396723 
+# mas 'Byword', id: 420212497
+# mas 'The Unarchiver', id: 425424353
+# mas 'Tweetbot', id: 1384080005
+# mas 'WhatsApp', id: 1147396723 
