@@ -7,12 +7,13 @@ tap 'homebrew/bundle'
 # Binaries
 brew 'bat'
 brew 'git'
+brew 'getantibody/tap/antibody'
 brew 'mackup'
 brew 'mas'
 brew 'trash'
 brew 'tree'
+brew 'winetricks'
 brew 'zsh'
-brew 'getantibody/tap/antibody'
 
 # Development
 brew 'node@10'
@@ -53,6 +54,8 @@ cask 'transmit'
 # cask 'virtualbox-extension-pack'
 cask 'visual-studio-code'
 cask 'vlc'
+cask 'xquartz'
+cask 'wine-staging'
 
 # Quicklook
 cask 'qlcolorcode'
