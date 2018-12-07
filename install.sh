@@ -26,20 +26,18 @@ if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/zsh";
 fi;
 
-# Install global NPM packages
-npm install --global pure-prompt
+# setup zsh plugins
+antibody bundle < $HOME/.dotfiles/zsh/plugins.txt > $HOME/.zsh_plugins.sh
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
 rm -rf $HOME/.zshrc
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
-# Git user setup
-GIT_AUTHOR_NAME=""
-GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-git config --global user.name "$GIT_AUTHOR_NAME"
-GIT_AUTHOR_EMAIL=""
-GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
-git config --global user.email "$GIT_AUTHOR_EMAIL"
+# Git config
+git config --global user.name ""
+git config --global user.email ""
+ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
+git config --global core.excludesfile ~/.gitignore_global
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg

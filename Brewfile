@@ -12,7 +12,7 @@ brew 'mas'
 brew 'trash'
 brew 'tree'
 brew 'zsh'
-brew 'zsh-completions'
+brew 'getantibody/tap/antibody'
 
 # Development
 brew 'node@10'
