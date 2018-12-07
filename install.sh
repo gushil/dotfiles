@@ -37,7 +37,7 @@ ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 git config --global user.name ""
 git config --global user.email ""
 ln -s $HOME/.dotfiles/.gitignore_global $HOME/.gitignore_global
-git config --global core.excludesfile ~/.gitignore_global
+git config --global core.excludesfile $HOME/.gitignore_global
 
 # Symlink the Mackup config file to the home directory
 ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
