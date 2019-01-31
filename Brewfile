@@ -5,14 +5,20 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 
 # Binaries
+brew 'curl'
 brew 'bat'
 brew 'git'
 brew 'getantibody/tap/antibody'
+brew 'htop'
 brew 'mackup'
 brew 'mas'
+brew 'neofetch'
+brew 'tldr'
 brew 'trash'
 brew 'tree'
 brew 'winetricks'
+brew 'wifi-password'
+brew 'youtube-dl'
 brew 'zsh'
 
 # Development
@@ -24,29 +30,32 @@ brew 'maven'
 # Apps
 cask 'aerial'
 cask 'alfred'
-cask 'bitwarden'
+cask 'appcleaner'
 cask 'caffeine'
 cask 'dash'
-cask 'enpass'
 cask 'firefox'
-cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'headset'
-cask 'hipchat'
 cask 'iina'
 cask 'imageoptim'
 cask 'insomnia'
+cask 'iterm2'
+cask 'itsycal'
+cask 'lastpass'
 cask 'nightowl'
+# cask 'onyx'
 cask 'postman'
 cask 'sequel-pro'
 cask 'shuttle'
 cask 'sizeup'
 cask 'skype'
+cask 'slack'
 cask 'spectacle'
 cask 'sublime-text'
 cask 'sublime-merge'
 cask 'tableplus'
 cask 'telegram'
+# cask 'tinkertool'
 cask 'tor-browser'
 cask 'transmission'
 cask 'transmit'
@@ -55,14 +64,18 @@ cask 'transmit'
 cask 'visual-studio-code'
 cask 'vlc'
 cask 'xquartz'
+cask 'whatsapp'
 cask 'wine-staging'
 
 # Quicklook
 cask 'qlcolorcode'
-cask 'qlmarkdown'
+cask "qlimagesize"
+cask "qlmarkdown"
+cask "qlprettypatch"
+cask 'qlstephen'
 cask 'quicklook-json'
 cask 'quicklook-csv'
-cask 'qlstephen'
+cask "webpquicklook"
 
 # Fonts
 cask 'font-fira-code'
@@ -70,8 +83,11 @@ cask 'font-source-code-pro-for-powerline'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
+cask "font-firacode-nerd-font"
+cask "font-firacode-nerd-font-mono"
 
 # Mac App Store
 # mas 'MindNode 5', id: 1289197285
 # mas 'The Unarchiver', id: 425424353
 # mas 'WhatsApp Desktop', id: 1147396723 
+# mas 'Monosnap'
