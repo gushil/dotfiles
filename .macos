@@ -2,15 +2,22 @@
 
 # Thanks to Mathias Bynens! https://mths.be/macos
 
+# If not ran on macOS, exit
+if [ "$(uname -s)" != "Darwin" ]; then
+	exit 0
+fi
+
+set +e
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
-osascript -e 'tell application "System Preferences" to quit'
+# osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
-sudo -v
+# sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+# while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Add iOS Simulator to Launchpad
 # sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.app" "/Applications/Simulator.app"
@@ -42,6 +49,17 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Disable auto-correct
 #defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# 'Fast key repeat. Requires restart.'
+# https://www.howtogeek.com/267463/how-to-enable-key-repeating-in-macos. 
+# defaults write -g ApplePressAndHoldEnabled -bool false
+
+# 'Fast opening and closing windows and popovers'
+# defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
+
+# 'Sped up dialogue boxes'
+# https://robservatory.com/speed-up-your-mac-via-hidden-prefs/
+# defaults write NSGlobalDomain NSWindowResizeTime 0.001
 
 ###############################################################################
 # Screen                                                                      #
