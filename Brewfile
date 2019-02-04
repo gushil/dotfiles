@@ -3,12 +3,13 @@ tap 'caskroom/cask'
 tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
+tap 'getantibody/tap'
 
 # Binaries
 brew 'curl'
 brew 'bat'
 brew 'git'
-brew 'getantibody/tap/antibody'
+brew 'antibody'
 brew 'htop'
 brew 'mackup'
 brew 'mas'
@@ -24,7 +25,7 @@ brew 'zsh'
 # Development
 brew 'node@10'
 brew 'yarn'
-cask 'java8'
+cask 'java'
 brew 'maven'
 
 # Apps
@@ -42,7 +43,6 @@ cask 'imageoptim'
 cask 'insomnia'
 cask 'iterm2'
 cask 'itsycal'
-cask 'lastpass'
 cask 'nightowl'
 # cask 'onyx'
 cask 'postman'
@@ -71,7 +71,6 @@ cask 'yujitach-menumeters'
 
 # Quicklook
 cask 'qlcolorcode'
-cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlprettypatch"
 cask 'qlstephen'
