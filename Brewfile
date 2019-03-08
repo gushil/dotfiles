@@ -23,15 +23,14 @@ brew 'youtube-dl'
 brew 'zsh'
 
 # Development
-brew 'node@10'
-brew 'yarn'
-cask 'java'
+cask 'zulu8'
 brew 'maven'
 
 # Apps
 cask 'aerial'
 cask 'alfred'
 cask 'appcleaner'
+cask 'brave-browser'
 cask 'caffeine'
 cask 'cheatsheet'
 cask 'dash'
