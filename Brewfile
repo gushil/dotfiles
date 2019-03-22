@@ -36,6 +36,7 @@ cask 'caffeine'
 cask 'cheatsheet'
 cask 'coconutbattery'
 cask 'dash'
+cask 'dozer'
 cask 'firefox'
 cask 'fman'
 cask 'google-chrome'
@@ -95,4 +96,4 @@ cask "font-firacode-nerd-font-mono"
 # mas 'MindNode 5', id: 1289197285
 # mas 'The Unarchiver', id: 425424353
 # mas 'WhatsApp Desktop', id: 1147396723 
-# mas 'Monosnap'
+# mas 'Amphetamine', id: 937984704
